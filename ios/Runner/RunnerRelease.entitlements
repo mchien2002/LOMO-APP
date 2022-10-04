@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+        <string>applinks:128.199.69.106</string>
+        <string>applinks:sta.netalomo.vn</string>
+        <string>applinks:pro.netalomo.vn</string>
+        <string>applinks:netalomo.vn</string>
+        <string>applinks:lomo.onelink.me</string>
+        <string>webcredentials:lomo.onelink.me</string>
+        <string>webcredentials:pro.netalomo.vn</string>
+        <string>webcredentials:sta.netalomo.vn</string>
+        <string>webcredentials:netalomo.vn</string>
+	</array>
+</dict>
+</plist>

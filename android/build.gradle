@@ -1,0 +1,49 @@
+buildscript {
+    ext {
+        gradle_version = '7.2.1'
+        kotlin_version = '1.6.21'
+        hilt_version = '2.42'
+        crashlytics_version = '2.5.2'
+        services_version = '4.3.10'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+        classpath "com.google.gms:google-services:$services_version"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlytics_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://github.com/jitsi/jitsi-maven-repository/raw/master/releases' }
+        maven { url 'https://github.com/Netacom-NetAlo/NetaloSDKs-Android/raw/main/NetAloSDK' }
+        mavenCentral()
+        mavenLocal()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

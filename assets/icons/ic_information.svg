@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_56" d="M0 0H24V24H0z" class="cls-1"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#9c5aff}
+        </style>
+    </defs>
+    <g id="Mask_Group_11" clip-path="url(#clip-path)">
+        <path id="info-circle" d="M14 8a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 10.839A4.839 4.839 0 1 1 18.839 14 4.836 4.836 0 0 1 14 18.839zm0-8.177a1.016 1.016 0 1 1-1.016 1.016A1.016 1.016 0 0 1 14 10.661zm1.355 6.145a.29.29 0 0 1-.29.29h-2.13a.29.29 0 0 1-.29-.29v-.581a.29.29 0 0 1 .29-.29h.29v-1.549h-.29a.29.29 0 0 1-.29-.29v-.581a.29.29 0 0 1 .29-.29h1.548a.29.29 0 0 1 .29.29v2.419h.29a.29.29 0 0 1 .29.29z" class="cls-1" transform="translate(-2 -2)"/>
+    </g>
+</svg>

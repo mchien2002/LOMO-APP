@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_56" d="M0 0H24V24H0z" class="cls-1"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#999}
+        </style>
+    </defs>
+    <g id="Mask_Group_11" clip-path="url(#clip-path)">
+        <path id="comment-dots" d="M4.7 38.769a1.458 1.458 0 1 0 1.458 1.458A1.457 1.457 0 0 0 4.7 38.769zm5.292 0a1.458 1.458 0 1 0 1.458 1.458 1.457 1.457 0 0 0-1.456-1.458zm5.292 0a1.458 1.458 0 1 0 1.458 1.458 1.457 1.457 0 0 0-1.456-1.458z" class="cls-1" transform="translate(2.006 -28.269)"/>
+    </g>
+</svg>

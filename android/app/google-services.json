@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "579826564997",
+    "firebase_url": "https://lomo-1fb0f.firebaseio.com",
+    "project_id": "lomo-1fb0f",
+    "storage_bucket": "lomo-1fb0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579826564997:android:fda6d96707ce020b7eceec",
+        "android_client_info": {
+          "package_name": "vn.netacom.lomo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579826564997-0ssp6jf83i8uuf5ju0d8oaguga7b974b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.netacom.lomo",
+            "certificate_hash": "f1297e108d6f8d0054060cdba0a5f05081a8f88d"
+          }
+        },
+        {
+          "client_id": "579826564997-1tg49h2lg8p6kumt2cm9dlp0od0gj0qu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.netacom.lomo",
+            "certificate_hash": "edfd8dfa52f8367938a363e08d4a135c52e114a0"
+          }
+        },
+        {
+          "client_id": "579826564997-noj3h0b4hkuirk8fc0dpb9tn1s2413th.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.netacom.lomo",
+            "certificate_hash": "6837dc557f91d9e2f0cd6dfcb4ad8afc9f855a41"
+          }
+        },
+        {
+          "client_id": "579826564997-veo676q3gvskno0q59dgpbr4mfupupgl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.netacom.lomo",
+            "certificate_hash": "5e6383f8feb4436b3ca47ababb274e3e97d4a69f"
+          }
+        },
+        {
+          "client_id": "579826564997-e35tfvsqu6vetpie0hf8474ra13fjqpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvjBiwJbEQx93nTBki4hEX4EDWMViwl7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579826564997-e35tfvsqu6vetpie0hf8474ra13fjqpf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "579826564997-1t819570e4hc7cnrt9jbv2h6lnbkdie6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.netaland.testbroker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579826564997:android:0ddfe3236da1fc2c7eceec",
+        "android_client_info": {
+          "package_name": "vn.netacom.lomo.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579826564997-e35tfvsqu6vetpie0hf8474ra13fjqpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvjBiwJbEQx93nTBki4hEX4EDWMViwl7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579826564997-e35tfvsqu6vetpie0hf8474ra13fjqpf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "579826564997-1t819570e4hc7cnrt9jbv2h6lnbkdie6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.netaland.testbroker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579826564997:android:ab5422b49054fc897eceec",
+        "android_client_info": {
+          "package_name": "vn.netacom.lomo.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579826564997-e35tfvsqu6vetpie0hf8474ra13fjqpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvjBiwJbEQx93nTBki4hEX4EDWMViwl7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579826564997-e35tfvsqu6vetpie0hf8474ra13fjqpf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "579826564997-1t819570e4hc7cnrt9jbv2h6lnbkdie6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.netaland.testbroker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

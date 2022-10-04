@@ -1,0 +1,3312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A6366372527B9874F743876 /* Pods_NotificationExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CBE186AC9F9756ACAFD7B0 /* Pods_NotificationExtension.framework */; };
+		0D7A2B88BD22313E9076362A /* Pods_Runner_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4D5606493E69CB15BF7CEC /* Pods_Runner_Dev.framework */; };
+		0E191E1726CF554600D875F9 /* FacebookTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E191E1626CF554600D875F9 /* FacebookTracking.swift */; };
+		0ECD5C0D2564D92600F8C38F /* MethodChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD5C0C2564D92600F8C38F /* MethodChannel.swift */; };
+		0ECD5C0F2564DC2F00F8C38F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD5C0E2564DC2F00F8C38F /* TestViewController.swift */; };
+		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		1560537DB9B937198FE9DEEF /* Pods_NotificationExtension_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F51BFD13662065366F2AAB /* Pods_NotificationExtension_Dev.framework */; };
+		21A38E8C2600B4E200298ED7 /* notification_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 21A38E3D2600AFF300298ED7 /* notification_sound.wav */; };
+		2F8AC6EC277316370048E755 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8AC6EB277316370048E755 /* BuildConfig.swift */; };
+		2F8AC6F4277317A10048E755 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8AC6F3277317A10048E755 /* BuildConfig.swift */; };
+		2F8AC6FC277317E10048E755 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8AC6FB277317E10048E755 /* BuildConfig.swift */; };
+		2FDE04C127731D4A007C0295 /* BuildConfg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04BF27731D21007C0295 /* BuildConfg.swift */; };
+		2FDE04C427731E50007C0295 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04C327731E50007C0295 /* BuildConfig.swift */; };
+		2FDE04C627731EA3007C0295 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04C527731EA3007C0295 /* BuildConfig.swift */; };
+		2FDE04C827731F0B007C0295 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04C727731F0B007C0295 /* Injection.swift */; };
+		2FDE04C927731F0B007C0295 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04C727731F0B007C0295 /* Injection.swift */; };
+		2FDE04CA27731F0B007C0295 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04C727731F0B007C0295 /* Injection.swift */; };
+		2FDE04CC27731F2A007C0295 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04CB27731F2A007C0295 /* NotificationService.swift */; };
+		2FDE04CD27731F2A007C0295 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04CB27731F2A007C0295 /* NotificationService.swift */; };
+		2FDE04CE27731F2A007C0295 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE04CB27731F2A007C0295 /* NotificationService.swift */; };
+		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		4B086A3127E06B28004AB16A /* NotificationExtension-Dev.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4B1F46CE2758C47D00DE1569 /* NotificationExtension-Dev.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B086A3427E06DD6004AB16A /* NotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 31F9259026084BA500A7CE31 /* NotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B1F3DDD275885F600DE1569 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		4B1F3DE2275885F600DE1569 /* MethodChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD5C0C2564D92600F8C38F /* MethodChannel.swift */; };
+		4B1F3DE3275885F600DE1569 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD5C0E2564DC2F00F8C38F /* TestViewController.swift */; };
+		4B1F3DE4275885F600DE1569 /* FacebookTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E191E1626CF554600D875F9 /* FacebookTracking.swift */; };
+		4B1F3DE5275885F600DE1569 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		4B1F3DEA275885F600DE1569 /* notification_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 21A38E3D2600AFF300298ED7 /* notification_sound.wav */; };
+		4B1F3DEC275885F600DE1569 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		4B1F3DED275885F600DE1569 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		4B1F3DEE275885F600DE1569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
+		4B1F3DEF275885F600DE1569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
+		4B1F3DF0275885F600DE1569 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA46A7C325AEE418002B1BFC /* InfoPlist.strings */; };
+		4B5F31F32770E0B700D6A314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		4B5F31F62770E0B700D6A314 /* MethodChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD5C0C2564D92600F8C38F /* MethodChannel.swift */; };
+		4B5F31F72770E0B700D6A314 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD5C0E2564DC2F00F8C38F /* TestViewController.swift */; };
+		4B5F31F82770E0B700D6A314 /* FacebookTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E191E1626CF554600D875F9 /* FacebookTracking.swift */; };
+		4B5F31F92770E0B700D6A314 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		4B5F31FE2770E0B700D6A314 /* notification_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 21A38E3D2600AFF300298ED7 /* notification_sound.wav */; };
+		4B5F31FF2770E0B700D6A314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		4B5F32002770E0B700D6A314 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		4B5F32012770E0B700D6A314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
+		4B5F32022770E0B700D6A314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
+		4B5F32032770E0B700D6A314 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA46A7C325AEE418002B1BFC /* InfoPlist.strings */; };
+		4B5F33FA2770EEFE00D6A314 /* NotificationExtension-Stag.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4B5F33362770EC5800D6A314 /* NotificationExtension-Stag.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B5F38FA2771573000D6A314 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B7832F42759D8AE005B71DC /* GoogleService-Info.plist */; };
+		4B5F38FB2771573300D6A314 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B7832F92759D8B7005B71DC /* GoogleService-Info.plist */; };
+		4B7832F02759D8A2005B71DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B7832EF2759D8A2005B71DC /* GoogleService-Info.plist */; };
+		7470862FC52DC56FA37779E7 /* Pods_NotificationExtension_Stag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE7B7C3C19C13CF20E79FAC /* Pods_NotificationExtension_Stag.framework */; };
+		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
+		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
+		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		AA46A7C125AEE418002B1BFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA46A7C325AEE418002B1BFC /* InfoPlist.strings */; };
+		E52A1597E0C981E7C79B16A1 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DBD927AEE3E133FBFC8BDA /* Pods_Runner.framework */; };
+		F7002D17417FBCE2B1B4F13D /* Pods_Runner_Stag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178A0F30E16CEB302085F5D7 /* Pods_Runner_Stag.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31F9259526084BA500A7CE31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31F9258F26084BA500A7CE31;
+			remoteInfo = NotificationExtension;
+		};
+		4B5F33FB2770EEFE00D6A314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B5F32FB2770EC5800D6A314;
+			remoteInfo = "NotificationExtension-Stag";
+		};
+		4B5F37C727714FED00D6A314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B1F46942758C47D00DE1569;
+			remoteInfo = "NotificationExtension-Dev";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2FDE064927732011007C0295 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B086A3427E06DD6004AB16A /* NotificationExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B0345BF27E04EB700448F4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B086A3127E06B28004AB16A /* NotificationExtension-Dev.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B0345C327E0510800448F4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F46C92758C47D00DE1569 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F32062770E0B700D6A314 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B5F33FA2770EEFE00D6A314 /* NotificationExtension-Stag.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F332E2770EC5800D6A314 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		027CCCC4D9D1885AA63092D0 /* Pods-NotificationExtension.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension.debug-dev.xcconfig"; path = "Target Support Files/Pods-NotificationExtension/Pods-NotificationExtension.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		06DBCCD5ADFC21ADEEF91C99 /* Pods-NotificationExtension-Stag.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Stag.debug-prod.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Stag/Pods-NotificationExtension-Stag.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		0A5169254689C6C5CBE97972 /* Pods-NotificationExtension.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension.release-dev.xcconfig"; path = "Target Support Files/Pods-NotificationExtension/Pods-NotificationExtension.release-dev.xcconfig"; sourceTree = "<group>"; };
+		0E191E1626CF554600D875F9 /* FacebookTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTracking.swift; sourceTree = "<group>"; };
+		0EBA02C6396A256F1A0381C5 /* Pods-Runner.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-dev.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		0EBB87EF2636BF3500B1C3A7 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		0EC38493268DC294004445C8 /* appsflyer_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = appsflyer_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECD5C0C2564D92600F8C38F /* MethodChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodChannel.swift; sourceTree = "<group>"; };
+		0ECD5C0E2564DC2F00F8C38F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		148AFC5F40EFB63C6FEC4DAB /* Pods-NotificationExtension-Dev.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Dev.debug-dev.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Dev/Pods-NotificationExtension-Dev.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		16C807260FE09A1B42C2312C /* Pods-NotificationExtension-Stag.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Stag.release-staging.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Stag/Pods-NotificationExtension-Stag.release-staging.xcconfig"; sourceTree = "<group>"; };
+		178A0F30E16CEB302085F5D7 /* Pods_Runner_Stag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner_Stag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		213FE6E3F519A7BF60582631 /* Pods-Runner-Dev.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Dev.debug-dev.xcconfig"; path = "Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		21A38E3D2600AFF300298ED7 /* notification_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notification_sound.wav; sourceTree = "<group>"; };
+		259039F1064C09BD7EB66DAE /* Pods-Runner.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-staging.xcconfig"; sourceTree = "<group>"; };
+		2925EBD88187F01932F1156A /* Pods-Runner-Stag.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Stag.debug-dev.xcconfig"; path = "Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		2AD8BD3CD1C1E35A423B8427 /* Pods-Runner.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		2F25B0D94E1E532E6C8686AA /* Pods-NotificationExtension-Stag.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Stag.release-prod.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Stag/Pods-NotificationExtension-Stag.release-prod.xcconfig"; sourceTree = "<group>"; };
+		2F8AC6EB277316370048E755 /* BuildConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
+		2F8AC6F3277317A10048E755 /* BuildConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
+		2F8AC6FB277317E10048E755 /* BuildConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
+		2FB21C2425675DAE009816C0 /* RunnerRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunnerRelease.entitlements; sourceTree = "<group>"; };
+		2FDE04BF27731D21007C0295 /* BuildConfg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfg.swift; sourceTree = "<group>"; };
+		2FDE04C327731E50007C0295 /* BuildConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
+		2FDE04C527731EA3007C0295 /* BuildConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
+		2FDE04C727731F0B007C0295 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		2FDE04CB27731F2A007C0295 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		30ECBA620B5ED8C448411424 /* Pods-Runner-Dev.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Dev.release-prod.xcconfig"; path = "Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev.release-prod.xcconfig"; sourceTree = "<group>"; };
+		31F9259026084BA500A7CE31 /* NotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		363FADEEABFE6C0398B8D117 /* Pods-NotificationExtension-Stag.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Stag.release-dev.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Stag/Pods-NotificationExtension-Stag.release-dev.xcconfig"; sourceTree = "<group>"; };
+		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		3C9B3D7D5571EC7B947D73E2 /* Pods-Runner.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-dev.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-dev.xcconfig"; sourceTree = "<group>"; };
+		4B1F3DBC2758800F00DE1569 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1F3DC02758801E00DE1569 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1F3DC52758824300DE1569 /* Runner.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		4B1F3DCA2758826B00DE1569 /* Runner.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		4B1F3DCE275882A100DE1569 /* Runner.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		4B1F3DFB275885F600DE1569 /* Runner-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runner-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1F41EF2758A38D00DE1569 /* NotificationExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NotificationExtension.entitlements; sourceTree = "<group>"; };
+		4B1F41F02758A39900DE1569 /* NotificationExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NotificationExtension.entitlements; sourceTree = "<group>"; };
+		4B1F41F12758A3BD00DE1569 /* NotificationExtension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NotificationExtension.entitlements; sourceTree = "<group>"; };
+		4B1F41F22758A49700DE1569 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1F41F92758A4A400DE1569 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1F41FF2758A4B100DE1569 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1F46CE2758C47D00DE1569 /* NotificationExtension-Dev.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NotificationExtension-Dev.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5F32102770E0B700D6A314 /* Runner-Stag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runner-Stag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5F33362770EC5800D6A314 /* NotificationExtension-Stag.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NotificationExtension-Stag.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7832EF2759D8A2005B71DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B7832F42759D8AE005B71DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B7832F92759D8B7005B71DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BE7B7C3C19C13CF20E79FAC /* Pods_NotificationExtension_Stag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationExtension_Stag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4D5606493E69CB15BF7CEC /* Pods_Runner_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511FA8AA38EEDDBD85656B63 /* Pods-NotificationExtension-Dev.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Dev.release-prod.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Dev/Pods-NotificationExtension-Dev.release-prod.xcconfig"; sourceTree = "<group>"; };
+		533273664A2CE84C7C91EF7D /* Pods-Runner-Dev.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Dev.debug-prod.xcconfig"; path = "Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		5438CA2240C08074EC7B5722 /* Pods-Runner-Dev.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Dev.debug-staging.xcconfig"; path = "Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		61F21304AAFE812A9633FAB4 /* Pods-Runner.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-prod.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-prod.xcconfig"; sourceTree = "<group>"; };
+		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
+		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		7ED4B2FB3F591395C65BFCF0 /* Pods-Runner-Dev.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Dev.release-staging.xcconfig"; path = "Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev.release-staging.xcconfig"; sourceTree = "<group>"; };
+		81D710ADCB6B30CC5E8608C1 /* Pods-Runner-Stag.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Stag.debug-prod.xcconfig"; path = "Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		85F51BFD13662065366F2AAB /* Pods_NotificationExtension_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationExtension_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E3A2D07416CE9F8F0E08D7 /* Pods-NotificationExtension.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension.debug-staging.xcconfig"; path = "Target Support Files/Pods-NotificationExtension/Pods-NotificationExtension.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
+		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
+		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C146FB1CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB0AB7C34FDD037EFF9ECF9 /* Pods-NotificationExtension-Dev.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Dev.release-staging.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Dev/Pods-NotificationExtension-Dev.release-staging.xcconfig"; sourceTree = "<group>"; };
+		A43A161802C9C289815EE30D /* Pods-Runner-Stag.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Stag.debug-staging.xcconfig"; path = "Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		A75237EC39EE47E420B3D262 /* Pods-NotificationExtension-Dev.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Dev.debug-staging.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Dev/Pods-NotificationExtension-Dev.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		AA46A7C425AEE41C002B1BFC /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		AA46A7C525AEE41F002B1BFC /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD7F082F27AE8006AEB6E47C /* Pods-Runner-Stag.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Stag.release-dev.xcconfig"; path = "Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag.release-dev.xcconfig"; sourceTree = "<group>"; };
+		B750972C2D5084E90DA7F1E2 /* Pods-Runner.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug-prod.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		B8B9BD1C348E76047281D239 /* Pods-NotificationExtension-Dev.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Dev.release-dev.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Dev/Pods-NotificationExtension-Dev.release-dev.xcconfig"; sourceTree = "<group>"; };
+		B9E4A00743B444FA74FCEFD3 /* Pods-Runner-Stag.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Stag.release-prod.xcconfig"; path = "Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag.release-prod.xcconfig"; sourceTree = "<group>"; };
+		BBFEB6A9845DCE204D485FF9 /* Pods-Runner-Stag.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Stag.release-staging.xcconfig"; path = "Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag.release-staging.xcconfig"; sourceTree = "<group>"; };
+		C24772AA70235758E4EDBD44 /* Pods-NotificationExtension.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension.debug-prod.xcconfig"; path = "Target Support Files/Pods-NotificationExtension/Pods-NotificationExtension.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		D7366DE2B5F021CE8EC929A4 /* Pods-Runner-Dev.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner-Dev.release-dev.xcconfig"; path = "Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev.release-dev.xcconfig"; sourceTree = "<group>"; };
+		DCEB0CEF75C0A6B21EA9EB74 /* Pods-NotificationExtension.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension.release-prod.xcconfig"; path = "Target Support Files/Pods-NotificationExtension/Pods-NotificationExtension.release-prod.xcconfig"; sourceTree = "<group>"; };
+		DF3FDBC2BAE66AB4065CE6F7 /* Pods-NotificationExtension-Stag.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Stag.debug-staging.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Stag/Pods-NotificationExtension-Stag.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		E37F519E64939A239E79078B /* Pods-NotificationExtension-Stag.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Stag.debug-dev.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Stag/Pods-NotificationExtension-Stag.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		E4F85195D47B9C709640E98A /* Pods-NotificationExtension-Dev.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension-Dev.debug-prod.xcconfig"; path = "Target Support Files/Pods-NotificationExtension-Dev/Pods-NotificationExtension-Dev.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		E7DBD927AEE3E133FBFC8BDA /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CBE186AC9F9756ACAFD7B0 /* Pods_NotificationExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5DED522267DC0263F2294D /* Pods-NotificationExtension.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationExtension.release-staging.xcconfig"; path = "Target Support Files/Pods-NotificationExtension/Pods-NotificationExtension.release-staging.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31F9258D26084BA500A7CE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A6366372527B9874F743876 /* Pods_NotificationExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F3DE6275885F600DE1569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7A2B88BD22313E9076362A /* Pods_Runner_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F46C32758C47D00DE1569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1560537DB9B937198FE9DEEF /* Pods_NotificationExtension_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F31FA2770E0B700D6A314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7002D17417FBCE2B1B4F13D /* Pods_Runner_Stag.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F332A2770EC5800D6A314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7470862FC52DC56FA37779E7 /* Pods_NotificationExtension_Stag.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C146EB1CF9000F007C117D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52A1597E0C981E7C79B16A1 /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E191E1526CF552900D875F9 /* tracking */ = {
+			isa = PBXGroup;
+			children = (
+				0E191E1626CF554600D875F9 /* FacebookTracking.swift */,
+			);
+			path = tracking;
+			sourceTree = "<group>";
+		};
+		215BBC5925CA7C5000F24E3E /* Raw */ = {
+			isa = PBXGroup;
+			children = (
+				21A38E3D2600AFF300298ED7 /* notification_sound.wav */,
+			);
+			path = Raw;
+			sourceTree = "<group>";
+		};
+		31F9259126084BA500A7CE31 /* NotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F41EB2758A29A00DE1569 /* Envs */,
+				2FDE04C727731F0B007C0295 /* Injection.swift */,
+				2FDE04CB27731F2A007C0295 /* NotificationService.swift */,
+			);
+			path = NotificationExtension;
+			sourceTree = "<group>";
+		};
+		4B1F3D462758702100DE1569 /* Envs */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F3D492758704600DE1569 /* Prod */,
+				4B1F3D482758703F00DE1569 /* Stag */,
+				4B1F3D472758703600DE1569 /* Dev */,
+			);
+			path = Envs;
+			sourceTree = "<group>";
+		};
+		4B1F3D472758703600DE1569 /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				4B7832F92759D8B7005B71DC /* GoogleService-Info.plist */,
+				4B1F3DCE275882A100DE1569 /* Runner.entitlements */,
+				4B1F3DC02758801E00DE1569 /* Info.plist */,
+				2F8AC6EB277316370048E755 /* BuildConfig.swift */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		4B1F3D482758703F00DE1569 /* Stag */ = {
+			isa = PBXGroup;
+			children = (
+				4B7832F42759D8AE005B71DC /* GoogleService-Info.plist */,
+				4B1F3DCA2758826B00DE1569 /* Runner.entitlements */,
+				97C147021CF9000F007C117D /* Info.plist */,
+				2F8AC6F3277317A10048E755 /* BuildConfig.swift */,
+			);
+			path = Stag;
+			sourceTree = "<group>";
+		};
+		4B1F3D492758704600DE1569 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				4B7832EF2759D8A2005B71DC /* GoogleService-Info.plist */,
+				4B1F3DC52758824300DE1569 /* Runner.entitlements */,
+				4B1F3DBC2758800F00DE1569 /* Info.plist */,
+				2F8AC6FB277317E10048E755 /* BuildConfig.swift */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
+		4B1F41EB2758A29A00DE1569 /* Envs */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F41EE2758A2C600DE1569 /* Stag */,
+				4B1F41ED2758A2C000DE1569 /* Dev */,
+				4B1F41EC2758A2B700DE1569 /* Prod */,
+			);
+			path = Envs;
+			sourceTree = "<group>";
+		};
+		4B1F41EC2758A2B700DE1569 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F41FF2758A4B100DE1569 /* Info.plist */,
+				4B1F41EF2758A38D00DE1569 /* NotificationExtension.entitlements */,
+				2FDE04C327731E50007C0295 /* BuildConfig.swift */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
+		4B1F41ED2758A2C000DE1569 /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F41F92758A4A400DE1569 /* Info.plist */,
+				4B1F41F02758A39900DE1569 /* NotificationExtension.entitlements */,
+				2FDE04BF27731D21007C0295 /* BuildConfg.swift */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		4B1F41EE2758A2C600DE1569 /* Stag */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F41F22758A49700DE1569 /* Info.plist */,
+				4B1F41F12758A3BD00DE1569 /* NotificationExtension.entitlements */,
+				2FDE04C527731EA3007C0295 /* BuildConfig.swift */,
+			);
+			path = Stag;
+			sourceTree = "<group>";
+		};
+		745DD382953BC1D9EF63FFDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EC38493268DC294004445C8 /* appsflyer_sdk.framework */,
+				0EBB87EF2636BF3500B1C3A7 /* AppTrackingTransparency.framework */,
+				F3CBE186AC9F9756ACAFD7B0 /* Pods_NotificationExtension.framework */,
+				85F51BFD13662065366F2AAB /* Pods_NotificationExtension_Dev.framework */,
+				4BE7B7C3C19C13CF20E79FAC /* Pods_NotificationExtension_Stag.framework */,
+				E7DBD927AEE3E133FBFC8BDA /* Pods_Runner.framework */,
+				4E4D5606493E69CB15BF7CEC /* Pods_Runner_Dev.framework */,
+				178A0F30E16CEB302085F5D7 /* Pods_Runner_Stag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9740EEB11CF90186004384FC /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
+				9740EEB21CF90195004384FC /* Debug.xcconfig */,
+				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
+				9740EEB31CF90195004384FC /* Generated.xcconfig */,
+			);
+			name = Flutter;
+			sourceTree = "<group>";
+		};
+		97C146E51CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				9740EEB11CF90186004384FC /* Flutter */,
+				97C146F01CF9000F007C117D /* Runner */,
+				31F9259126084BA500A7CE31 /* NotificationExtension */,
+				97C146EF1CF9000F007C117D /* Products */,
+				AE64DF9D241648EAF0B24DC8 /* Pods */,
+				745DD382953BC1D9EF63FFDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		97C146EF1CF9000F007C117D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97C146EE1CF9000F007C117D /* Runner.app */,
+				31F9259026084BA500A7CE31 /* NotificationExtension.appex */,
+				4B1F3DFB275885F600DE1569 /* Runner-Dev.app */,
+				4B1F46CE2758C47D00DE1569 /* NotificationExtension-Dev.appex */,
+				4B5F32102770E0B700D6A314 /* Runner-Stag.app */,
+				4B5F33362770EC5800D6A314 /* NotificationExtension-Stag.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C146F01CF9000F007C117D /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F3D462758702100DE1569 /* Envs */,
+				0E191E1526CF552900D875F9 /* tracking */,
+				215BBC5925CA7C5000F24E3E /* Raw */,
+				2FB21C2425675DAE009816C0 /* RunnerRelease.entitlements */,
+				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				97C146FD1CF9000F007C117D /* Assets.xcassets */,
+				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
+				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
+				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
+				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
+				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+				0ECD5C0C2564D92600F8C38F /* MethodChannel.swift */,
+				0ECD5C0E2564DC2F00F8C38F /* TestViewController.swift */,
+				AA46A7C325AEE418002B1BFC /* InfoPlist.strings */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		AE64DF9D241648EAF0B24DC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				027CCCC4D9D1885AA63092D0 /* Pods-NotificationExtension.debug-dev.xcconfig */,
+				C24772AA70235758E4EDBD44 /* Pods-NotificationExtension.debug-prod.xcconfig */,
+				96E3A2D07416CE9F8F0E08D7 /* Pods-NotificationExtension.debug-staging.xcconfig */,
+				DCEB0CEF75C0A6B21EA9EB74 /* Pods-NotificationExtension.release-prod.xcconfig */,
+				FD5DED522267DC0263F2294D /* Pods-NotificationExtension.release-staging.xcconfig */,
+				0A5169254689C6C5CBE97972 /* Pods-NotificationExtension.release-dev.xcconfig */,
+				148AFC5F40EFB63C6FEC4DAB /* Pods-NotificationExtension-Dev.debug-dev.xcconfig */,
+				E4F85195D47B9C709640E98A /* Pods-NotificationExtension-Dev.debug-prod.xcconfig */,
+				A75237EC39EE47E420B3D262 /* Pods-NotificationExtension-Dev.debug-staging.xcconfig */,
+				511FA8AA38EEDDBD85656B63 /* Pods-NotificationExtension-Dev.release-prod.xcconfig */,
+				9DB0AB7C34FDD037EFF9ECF9 /* Pods-NotificationExtension-Dev.release-staging.xcconfig */,
+				B8B9BD1C348E76047281D239 /* Pods-NotificationExtension-Dev.release-dev.xcconfig */,
+				E37F519E64939A239E79078B /* Pods-NotificationExtension-Stag.debug-dev.xcconfig */,
+				06DBCCD5ADFC21ADEEF91C99 /* Pods-NotificationExtension-Stag.debug-prod.xcconfig */,
+				DF3FDBC2BAE66AB4065CE6F7 /* Pods-NotificationExtension-Stag.debug-staging.xcconfig */,
+				2F25B0D94E1E532E6C8686AA /* Pods-NotificationExtension-Stag.release-prod.xcconfig */,
+				16C807260FE09A1B42C2312C /* Pods-NotificationExtension-Stag.release-staging.xcconfig */,
+				363FADEEABFE6C0398B8D117 /* Pods-NotificationExtension-Stag.release-dev.xcconfig */,
+				0EBA02C6396A256F1A0381C5 /* Pods-Runner.debug-dev.xcconfig */,
+				B750972C2D5084E90DA7F1E2 /* Pods-Runner.debug-prod.xcconfig */,
+				2AD8BD3CD1C1E35A423B8427 /* Pods-Runner.debug-staging.xcconfig */,
+				61F21304AAFE812A9633FAB4 /* Pods-Runner.release-prod.xcconfig */,
+				259039F1064C09BD7EB66DAE /* Pods-Runner.release-staging.xcconfig */,
+				3C9B3D7D5571EC7B947D73E2 /* Pods-Runner.release-dev.xcconfig */,
+				213FE6E3F519A7BF60582631 /* Pods-Runner-Dev.debug-dev.xcconfig */,
+				533273664A2CE84C7C91EF7D /* Pods-Runner-Dev.debug-prod.xcconfig */,
+				5438CA2240C08074EC7B5722 /* Pods-Runner-Dev.debug-staging.xcconfig */,
+				30ECBA620B5ED8C448411424 /* Pods-Runner-Dev.release-prod.xcconfig */,
+				7ED4B2FB3F591395C65BFCF0 /* Pods-Runner-Dev.release-staging.xcconfig */,
+				D7366DE2B5F021CE8EC929A4 /* Pods-Runner-Dev.release-dev.xcconfig */,
+				2925EBD88187F01932F1156A /* Pods-Runner-Stag.debug-dev.xcconfig */,
+				81D710ADCB6B30CC5E8608C1 /* Pods-Runner-Stag.debug-prod.xcconfig */,
+				A43A161802C9C289815EE30D /* Pods-Runner-Stag.debug-staging.xcconfig */,
+				B9E4A00743B444FA74FCEFD3 /* Pods-Runner-Stag.release-prod.xcconfig */,
+				BBFEB6A9845DCE204D485FF9 /* Pods-Runner-Stag.release-staging.xcconfig */,
+				AD7F082F27AE8006AEB6E47C /* Pods-Runner-Stag.release-dev.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31F9258F26084BA500A7CE31 /* NotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F9259826084BA500A7CE31 /* Build configuration list for PBXNativeTarget "NotificationExtension" */;
+			buildPhases = (
+				C4087F2D9B3184637B0E52C2 /* [CP] Check Pods Manifest.lock */,
+				31F9258C26084BA500A7CE31 /* Sources */,
+				31F9258D26084BA500A7CE31 /* Frameworks */,
+				31F9258E26084BA500A7CE31 /* Resources */,
+				4B0345C327E0510800448F4A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationExtension;
+			productName = NotificationExtension;
+			productReference = 31F9259026084BA500A7CE31 /* NotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4B1F3DD4275885F600DE1569 /* Runner-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1F3DF7275885F600DE1569 /* Build configuration list for PBXNativeTarget "Runner-Dev" */;
+			buildPhases = (
+				97A83F3842C28370E7D9D1FC /* [CP] Check Pods Manifest.lock */,
+				4B1F3DD8275885F600DE1569 /* Run Script */,
+				4B1F3DDA275885F600DE1569 /* Sources */,
+				4B1F3DE6275885F600DE1569 /* Frameworks */,
+				4B1F3DE8275885F600DE1569 /* Resources */,
+				4B1F3DF2275885F600DE1569 /* Thin Binary */,
+				4B1F3DF6275885F600DE1569 /* ShellScript */,
+				4B0345BF27E04EB700448F4A /* Embed App Extensions */,
+				42A43658A2216904EBF224EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B5F37C827714FED00D6A314 /* PBXTargetDependency */,
+			);
+			name = "Runner-Dev";
+			productName = Runner;
+			productReference = 4B1F3DFB275885F600DE1569 /* Runner-Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B1F46942758C47D00DE1569 /* NotificationExtension-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1F46CA2758C47D00DE1569 /* Build configuration list for PBXNativeTarget "NotificationExtension-Dev" */;
+			buildPhases = (
+				163DF9A8ADB791A0C18B36DF /* [CP] Check Pods Manifest.lock */,
+				4B1F46962758C47D00DE1569 /* Sources */,
+				4B1F46C32758C47D00DE1569 /* Frameworks */,
+				4B1F46C72758C47D00DE1569 /* Resources */,
+				4B1F46C92758C47D00DE1569 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NotificationExtension-Dev";
+			productName = NotificationExtension;
+			productReference = 4B1F46CE2758C47D00DE1569 /* NotificationExtension-Dev.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4B5F31EC2770E0B700D6A314 /* Runner-Stag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B5F32092770E0B700D6A314 /* Build configuration list for PBXNativeTarget "Runner-Stag" */;
+			buildPhases = (
+				FC39A31BA9D1D5C5F841C46A /* [CP] Check Pods Manifest.lock */,
+				4B5F31F02770E0B700D6A314 /* Run Script */,
+				4B5F31F12770E0B700D6A314 /* Sources */,
+				4B5F31FA2770E0B700D6A314 /* Frameworks */,
+				4B5F31FC2770E0B700D6A314 /* Resources */,
+				4B5F32042770E0B700D6A314 /* Thin Binary */,
+				4B5F32052770E0B700D6A314 /* ShellScript */,
+				4B5F32062770E0B700D6A314 /* Embed App Extensions */,
+				2FE18966DB15B8A07F19A384 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B5F33FC2770EEFE00D6A314 /* PBXTargetDependency */,
+			);
+			name = "Runner-Stag";
+			productName = Runner;
+			productReference = 4B5F32102770E0B700D6A314 /* Runner-Stag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B5F32FB2770EC5800D6A314 /* NotificationExtension-Stag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B5F332F2770EC5800D6A314 /* Build configuration list for PBXNativeTarget "NotificationExtension-Stag" */;
+			buildPhases = (
+				A11C9A85A27629631CDDE90C /* [CP] Check Pods Manifest.lock */,
+				4B5F32FD2770EC5800D6A314 /* Sources */,
+				4B5F332A2770EC5800D6A314 /* Frameworks */,
+				4B5F332C2770EC5800D6A314 /* Resources */,
+				4B5F332E2770EC5800D6A314 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NotificationExtension-Stag";
+			productName = NotificationExtension;
+			productReference = 4B5F33362770EC5800D6A314 /* NotificationExtension-Stag.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		97C146ED1CF9000F007C117D /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				495C21C18910013E6223174F /* [CP] Check Pods Manifest.lock */,
+				9740EEB61CF901F6004384FC /* Run Script */,
+				97C146EA1CF9000F007C117D /* Sources */,
+				97C146EB1CF9000F007C117D /* Frameworks */,
+				97C146EC1CF9000F007C117D /* Resources */,
+				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				218559D226DC9AED0082C4A0 /* ShellScript */,
+				2FDE064927732011007C0295 /* Embed App Extensions */,
+				FF35AB2A65244EB77BD5D321 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31F9259626084BA500A7CE31 /* PBXTargetDependency */,
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97C146E61CF9000F007C117D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					31F9258F26084BA500A7CE31 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1310;
+					};
+					4B5F32FB2770EC5800D6A314 = {
+						LastSwiftMigration = 1310;
+					};
+					97C146ED1CF9000F007C117D = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"en-US",
+				vi,
+			);
+			mainGroup = 97C146E51CF9000F007C117D;
+			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C146ED1CF9000F007C117D /* Runner */,
+				4B1F3DD4275885F600DE1569 /* Runner-Dev */,
+				4B5F31EC2770E0B700D6A314 /* Runner-Stag */,
+				31F9258F26084BA500A7CE31 /* NotificationExtension */,
+				4B1F46942758C47D00DE1569 /* NotificationExtension-Dev */,
+				4B5F32FB2770EC5800D6A314 /* NotificationExtension-Stag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31F9258E26084BA500A7CE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F3DE8275885F600DE1569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1F3DEA275885F600DE1569 /* notification_sound.wav in Resources */,
+				4B1F3DEC275885F600DE1569 /* LaunchScreen.storyboard in Resources */,
+				4B1F3DED275885F600DE1569 /* AppFrameworkInfo.plist in Resources */,
+				4B1F3DEE275885F600DE1569 /* Assets.xcassets in Resources */,
+				4B1F3DEF275885F600DE1569 /* Main.storyboard in Resources */,
+				4B1F3DF0275885F600DE1569 /* InfoPlist.strings in Resources */,
+				4B5F38FB2771573300D6A314 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F46C72758C47D00DE1569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F31FC2770E0B700D6A314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5F38FA2771573000D6A314 /* GoogleService-Info.plist in Resources */,
+				4B5F31FE2770E0B700D6A314 /* notification_sound.wav in Resources */,
+				4B5F31FF2770E0B700D6A314 /* LaunchScreen.storyboard in Resources */,
+				4B5F32002770E0B700D6A314 /* AppFrameworkInfo.plist in Resources */,
+				4B5F32012770E0B700D6A314 /* Assets.xcassets in Resources */,
+				4B5F32022770E0B700D6A314 /* Main.storyboard in Resources */,
+				4B5F32032770E0B700D6A314 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F332C2770EC5800D6A314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C146EC1CF9000F007C117D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A38E8C2600B4E200298ED7 /* notification_sound.wav in Resources */,
+				4B7832F02759D8A2005B71DC /* GoogleService-Info.plist in Resources */,
+				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				AA46A7C125AEE418002B1BFC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		163DF9A8ADB791A0C18B36DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationExtension-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		218559D226DC9AED0082C4A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		2FE18966DB15B8A07F19A384 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner-Stag/Pods-Runner-Stag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Thin Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin\n";
+		};
+		42A43658A2216904EBF224EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner-Dev/Pods-Runner-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		495C21C18910013E6223174F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B1F3DD8275885F600DE1569 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
+		4B1F3DF2275885F600DE1569 /* Thin Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Thin Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin\n";
+		};
+		4B1F3DF6275885F600DE1569 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		4B5F31F02770E0B700D6A314 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
+		4B5F32042770E0B700D6A314 /* Thin Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Thin Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin\n";
+		};
+		4B5F32052770E0B700D6A314 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		9740EEB61CF901F6004384FC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
+		97A83F3842C28370E7D9D1FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11C9A85A27629631CDDE90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationExtension-Stag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4087F2D9B3184637B0E52C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC39A31BA9D1D5C5F841C46A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-Stag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF35AB2A65244EB77BD5D321 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31F9258C26084BA500A7CE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDE04C427731E50007C0295 /* BuildConfig.swift in Sources */,
+				2FDE04CC27731F2A007C0295 /* NotificationService.swift in Sources */,
+				2FDE04C827731F0B007C0295 /* Injection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F3DDA275885F600DE1569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1F3DDD275885F600DE1569 /* AppDelegate.swift in Sources */,
+				4B1F3DE2275885F600DE1569 /* MethodChannel.swift in Sources */,
+				4B1F3DE3275885F600DE1569 /* TestViewController.swift in Sources */,
+				4B1F3DE4275885F600DE1569 /* FacebookTracking.swift in Sources */,
+				2F8AC6EC277316370048E755 /* BuildConfig.swift in Sources */,
+				4B1F3DE5275885F600DE1569 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B1F46962758C47D00DE1569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDE04C127731D4A007C0295 /* BuildConfg.swift in Sources */,
+				2FDE04CD27731F2A007C0295 /* NotificationService.swift in Sources */,
+				2FDE04C927731F0B007C0295 /* Injection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F31F12770E0B700D6A314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5F31F32770E0B700D6A314 /* AppDelegate.swift in Sources */,
+				4B5F31F62770E0B700D6A314 /* MethodChannel.swift in Sources */,
+				4B5F31F72770E0B700D6A314 /* TestViewController.swift in Sources */,
+				4B5F31F82770E0B700D6A314 /* FacebookTracking.swift in Sources */,
+				2F8AC6F4277317A10048E755 /* BuildConfig.swift in Sources */,
+				4B5F31F92770E0B700D6A314 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B5F32FD2770EC5800D6A314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FDE04C627731EA3007C0295 /* BuildConfig.swift in Sources */,
+				2FDE04CE27731F2A007C0295 /* NotificationService.swift in Sources */,
+				2FDE04CA27731F0B007C0295 /* Injection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C146EA1CF9000F007C117D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				0ECD5C0D2564D92600F8C38F /* MethodChannel.swift in Sources */,
+				0ECD5C0F2564DC2F00F8C38F /* TestViewController.swift in Sources */,
+				0E191E1726CF554600D875F9 /* FacebookTracking.swift in Sources */,
+				2F8AC6FC277317E10048E755 /* BuildConfig.swift in Sources */,
+				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31F9259626084BA500A7CE31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31F9258F26084BA500A7CE31 /* NotificationExtension */;
+			targetProxy = 31F9259526084BA500A7CE31 /* PBXContainerItemProxy */;
+		};
+		4B5F33FC2770EEFE00D6A314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B5F32FB2770EC5800D6A314 /* NotificationExtension-Stag */;
+			targetProxy = 4B5F33FB2770EEFE00D6A314 /* PBXContainerItemProxy */;
+		};
+		4B5F37C827714FED00D6A314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B1F46942758C47D00DE1569 /* NotificationExtension-Dev */;
+			targetProxy = 4B5F37C727714FED00D6A314 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C146FB1CF9000F007C117D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C147001CF9000F007C117D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AA46A7C325AEE418002B1BFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA46A7C425AEE41C002B1BFC /* en-US */,
+				AA46A7C525AEE41F002B1BFC /* vi */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B431AD527706DE700CF8DAC /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PACKAGE_CONFIG = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-staging";
+		};
+		4B431AD627706DE700CF8DAC /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = LOMO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Prod/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_staging.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-staging";
+		};
+		4B431AD727706DE700CF8DAC /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E3A2D07416CE9F8F0E08D7 /* Pods-NotificationExtension.debug-staging.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Prod/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo.noti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-staging";
+		};
+		4B431AD827706DE700CF8DAC /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Dev/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FLUTTER_TARGET = lib/flavors/main_staging.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-staging";
+		};
+		4B431AD927706DE700CF8DAC /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75237EC39EE47E420B3D262 /* Pods-NotificationExtension-Dev.debug-staging.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Dev/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-staging";
+		};
+		4B431ADC27706DFA00CF8DAC /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PACKAGE_CONFIG = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-prod";
+		};
+		4B431ADD27706DFA00CF8DAC /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = LOMO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Prod/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_production.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-prod";
+		};
+		4B431ADE27706DFA00CF8DAC /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C24772AA70235758E4EDBD44 /* Pods-NotificationExtension.debug-prod.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Prod/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo.noti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-prod";
+		};
+		4B431ADF27706DFA00CF8DAC /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Dev/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FLUTTER_TARGET = lib/flavors/main_production.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-prod";
+		};
+		4B431AE027706DFA00CF8DAC /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F85195D47B9C709640E98A /* Pods-NotificationExtension-Dev.debug-prod.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Dev/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-prod";
+		};
+		4B431AE327706E1000CF8DAC /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-dev";
+		};
+		4B431AE427706E1000CF8DAC /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = LOMO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Prod/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_development.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-dev";
+		};
+		4B431AE527706E1000CF8DAC /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A5169254689C6C5CBE97972 /* Pods-NotificationExtension.release-dev.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Prod/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo.noti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-dev";
+		};
+		4B431AE627706E1000CF8DAC /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Dev/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FLUTTER_TARGET = lib/flavors/main_development.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-dev";
+		};
+		4B431AE727706E1000CF8DAC /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B9BD1C348E76047281D239 /* Pods-NotificationExtension-Dev.release-dev.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Dev/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-dev";
+		};
+		4B431AEA27706E1C00CF8DAC /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-staging";
+		};
+		4B431AEB27706E1C00CF8DAC /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = LOMO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Prod/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_staging.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-staging";
+		};
+		4B431AEC27706E1C00CF8DAC /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD5DED522267DC0263F2294D /* Pods-NotificationExtension.release-staging.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Prod/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo.noti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-staging";
+		};
+		4B431AED27706E1C00CF8DAC /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Dev/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FLUTTER_TARGET = lib/flavors/main_staging.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-staging";
+		};
+		4B431AEE27706E1C00CF8DAC /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB0AB7C34FDD037EFF9ECF9 /* Pods-NotificationExtension-Dev.release-staging.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Dev/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-staging";
+		};
+		4B5F320A2770E0B700D6A314 /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Stag/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_development.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-dev";
+		};
+		4B5F320B2770E0B700D6A314 /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Stag/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_production.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-prod";
+		};
+		4B5F320C2770E0B700D6A314 /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Stag/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_staging.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-staging";
+		};
+		4B5F320D2770E0B700D6A314 /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Stag/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_production.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-prod";
+		};
+		4B5F320E2770E0B700D6A314 /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Stag/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_staging.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-staging";
+		};
+		4B5F320F2770E0B700D6A314 /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Stag/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_development.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-dev";
+		};
+		4B5F33302770EC5800D6A314 /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E37F519E64939A239E79078B /* Pods-NotificationExtension-Stag.debug-dev.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Stag/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-dev";
+		};
+		4B5F33312770EC5800D6A314 /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06DBCCD5ADFC21ADEEF91C99 /* Pods-NotificationExtension-Stag.debug-prod.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Stag/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-prod";
+		};
+		4B5F33322770EC5800D6A314 /* Debug-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3FDBC2BAE66AB4065CE6F7 /* Pods-NotificationExtension-Stag.debug-staging.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Stag/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-staging";
+		};
+		4B5F33332770EC5800D6A314 /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F25B0D94E1E532E6C8686AA /* Pods-NotificationExtension-Stag.release-prod.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Stag/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-prod";
+		};
+		4B5F33342770EC5800D6A314 /* Release-staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C807260FE09A1B42C2312C /* Pods-NotificationExtension-Stag.release-staging.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Stag/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-staging";
+		};
+		4B5F33352770EC5800D6A314 /* Release-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363FADEEABFE6C0398B8D117 /* Pods-NotificationExtension-Stag.release-dev.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					arm64,
+				);
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Stag/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Stag/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-dev";
+		};
+		4B78332A2759F174005B71DC /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PACKAGE_CONFIG = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-dev";
+		};
+		4B78332B2759F174005B71DC /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = LOMO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Prod/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_development.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-dev";
+		};
+		4B78332C2759F174005B71DC /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027CCCC4D9D1885AA63092D0 /* Pods-NotificationExtension.debug-dev.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Prod/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo.noti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-dev";
+		};
+		4B78332D2759F174005B71DC /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Dev/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FLUTTER_TARGET = lib/flavors/main_development.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG LOCAL";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-dev";
+		};
+		4B78332E2759F174005B71DC /* Debug-dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148AFC5F40EFB63C6FEC4DAB /* Pods-NotificationExtension-Dev.debug-dev.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Dev/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug-dev";
+		};
+		4B7833422759F195005B71DC /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-prod";
+		};
+		4B7833432759F195005B71DC /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_DISPLAY_NAME = LOMO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Prod/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FLUTTER_TARGET = lib/flavors/main_production.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-prod";
+		};
+		4B7833442759F195005B71DC /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCEB0CEF75C0A6B21EA9EB74 /* Pods-NotificationExtension.release-prod.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Prod/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Prod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.netacom.lomo.noti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-prod-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-prod";
+		};
+		4B7833452759F195005B71DC /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				APP_DISPLAY_NAME = "LOMO DEV";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Envs/Dev/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FLUTTER_TARGET = lib/flavors/main_production.dart;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/Runner/SDKs",
+				);
+				INFOPLIST_FILE = Runner/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MARKETING_VERSION = 1.1.41;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = PROD;
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-prod";
+		};
+		4B7833462759F195005B71DC /* Release-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 511FA8AA38EEDDBD85656B63 /* Pods-NotificationExtension-Dev.release-prod.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = NotificationExtension/Envs/Dev/NotificationExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 51;
+				DEVELOPMENT_TEAM = ZCBUP6ND93;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationExtension/SDKs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationExtension/Envs/Dev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.41;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vn.netacom.lomo-dev.noti";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "lomo-dev-noti";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release-prod";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31F9259826084BA500A7CE31 /* Build configuration list for PBXNativeTarget "NotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B78332C2759F174005B71DC /* Debug-dev */,
+				4B431ADE27706DFA00CF8DAC /* Debug-prod */,
+				4B431AD727706DE700CF8DAC /* Debug-staging */,
+				4B7833442759F195005B71DC /* Release-prod */,
+				4B431AEC27706E1C00CF8DAC /* Release-staging */,
+				4B431AE527706E1000CF8DAC /* Release-dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-prod";
+		};
+		4B1F3DF7275885F600DE1569 /* Build configuration list for PBXNativeTarget "Runner-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B78332D2759F174005B71DC /* Debug-dev */,
+				4B431ADF27706DFA00CF8DAC /* Debug-prod */,
+				4B431AD827706DE700CF8DAC /* Debug-staging */,
+				4B7833452759F195005B71DC /* Release-prod */,
+				4B431AED27706E1C00CF8DAC /* Release-staging */,
+				4B431AE627706E1000CF8DAC /* Release-dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-prod";
+		};
+		4B1F46CA2758C47D00DE1569 /* Build configuration list for PBXNativeTarget "NotificationExtension-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B78332E2759F174005B71DC /* Debug-dev */,
+				4B431AE027706DFA00CF8DAC /* Debug-prod */,
+				4B431AD927706DE700CF8DAC /* Debug-staging */,
+				4B7833462759F195005B71DC /* Release-prod */,
+				4B431AEE27706E1C00CF8DAC /* Release-staging */,
+				4B431AE727706E1000CF8DAC /* Release-dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-prod";
+		};
+		4B5F32092770E0B700D6A314 /* Build configuration list for PBXNativeTarget "Runner-Stag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5F320A2770E0B700D6A314 /* Debug-dev */,
+				4B5F320B2770E0B700D6A314 /* Debug-prod */,
+				4B5F320C2770E0B700D6A314 /* Debug-staging */,
+				4B5F320D2770E0B700D6A314 /* Release-prod */,
+				4B5F320E2770E0B700D6A314 /* Release-staging */,
+				4B5F320F2770E0B700D6A314 /* Release-dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-prod";
+		};
+		4B5F332F2770EC5800D6A314 /* Build configuration list for PBXNativeTarget "NotificationExtension-Stag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5F33302770EC5800D6A314 /* Debug-dev */,
+				4B5F33312770EC5800D6A314 /* Debug-prod */,
+				4B5F33322770EC5800D6A314 /* Debug-staging */,
+				4B5F33332770EC5800D6A314 /* Release-prod */,
+				4B5F33342770EC5800D6A314 /* Release-staging */,
+				4B5F33352770EC5800D6A314 /* Release-dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-prod";
+		};
+		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B78332A2759F174005B71DC /* Debug-dev */,
+				4B431ADC27706DFA00CF8DAC /* Debug-prod */,
+				4B431AD527706DE700CF8DAC /* Debug-staging */,
+				4B7833422759F195005B71DC /* Release-prod */,
+				4B431AEA27706E1C00CF8DAC /* Release-staging */,
+				4B431AE327706E1000CF8DAC /* Release-dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-prod";
+		};
+		97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B78332B2759F174005B71DC /* Debug-dev */,
+				4B431ADD27706DFA00CF8DAC /* Debug-prod */,
+				4B431AD627706DE700CF8DAC /* Debug-staging */,
+				4B7833432759F195005B71DC /* Release-prod */,
+				4B431AEB27706E1C00CF8DAC /* Release-staging */,
+				4B431AE427706E1000CF8DAC /* Release-dev */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-prod";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97C146E61CF9000F007C117D /* Project object */;
+}

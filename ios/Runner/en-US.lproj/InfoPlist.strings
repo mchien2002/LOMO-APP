@@ -1,0 +1,28 @@
+/* 
+  File.strings
+  Runner
+
+  Created by Huynh Quang Toan on 1/13/21.
+  
+*/
+
+
+NSMicrophoneUsageDescription = "Allow application to access your recorder for making calls and sending voice messages.";
+
+NSPhotoLibraryUsageDescription = "Allow application to access your gallery to update your avatar and create posts.";
+
+NSPhotoLibraryAddUsageDescription = "Allow application add image download from application to library.";
+
+NSContactsUsageDescription = "Allow application to access your contacts list to allow you to connect with your friends.";
+ 
+NSCameraUsageDescription = "Allow application to access your camera to update your avatar and create posts.";
+
+NSLocationWhenInUseUsageDescription = "Allow application to access your location to show your surrounding friends.";
+
+NSLocationAlwaysUsageDescription = "Allow application to access your location to show your surrounding friends.";
+
+NSLocationAlwaysAndWhenInUseUsageDescription = "Allow application to access your location to show your surrounding friends.";
+
+NSUserTrackingUsageDescription = "Your data will be used to provide you a better and personalized ad experience.";
+
+NSCalendarsUsageDescription = "Allow application to access your calendar to better support you.";

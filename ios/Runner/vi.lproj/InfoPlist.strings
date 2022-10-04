@@ -1,0 +1,28 @@
+/* 
+  File.strings
+  Runner
+
+  Created by Huynh Quang Toan on 1/13/21.
+  
+*/
+
+
+NSMicrophoneUsageDescription = "Cho phép ứng dụng truy cập vào ghi âm để gọi điện và gửi tin nhắn giọng nói.";
+
+NSPhotoLibraryUsageDescription = "Cho phép ứng dụng truy cập vào thư viện để cập nhật ảnh đại diện và tạo bài đăng.";
+
+NSPhotoLibraryAddUsageDescription = "Cho phép ứng dụng thêm ảnh tải về từ ứng dụng vào thư viện.";
+
+NSContactsUsageDescription = "Cho phép ứng dụng truy cập vào danh bạ để cho phép bạn kết nối với bạn bè.";
+ 
+NSCameraUsageDescription = "Cho phép ứng dụng truy cập vào camera để cập nhật ảnh đại diện và tạo bài đăng.";
+
+NSLocationWhenInUseUsageDescription = "Cho phép ứng dụng truy cập vị trí của bạn để hiển thị bạn bè xung quanh của bạn.";
+
+NSLocationAlwaysUsageDescription = "Cho phép ứng dụng truy cập vị trí của bạn để hiển thị bạn bè xung quanh của bạn.";
+
+NSLocationAlwaysAndWhenInUseUsageDescription = "Cho phép ứng dụng truy cập vị trí của bạn để hiển thị bạn bè xung quanh của bạn.";
+
+NSUserTrackingUsageDescription = "Dữ liệu của bạn sẽ được sử dụng để cung cấp cho bạn trải nghiệm quảng cáo tốt hơn và được cá nhân hóa.";
+
+NSCalendarsUsageDescription = "Cho phép ứng dụng truy cập lịch của bạn để hổ trợ bạn tốt hơn.";

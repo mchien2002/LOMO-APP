@@ -1,0 +1,1 @@
+class ServerMaintenanceException implements Exception {}

@@ -1,0 +1,1 @@
+const TABLE_NEWFEED = "table_newfeed";

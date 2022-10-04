@@ -1,0 +1,174 @@
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+android {
+    compileSdkVersion 33
+    buildToolsVersion "33.0.0"
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+
+    defaultConfig {
+        applicationId "vn.netacom.lomo"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    packagingOptions {
+        jniLibs {
+            pickFirsts += ['**/lib/**']
+        }
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0', 'META-INF/*.kotlin_module']
+            pickFirsts += ['**/lib/**']
+        }
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+        debug {
+            keyAlias keystoreProperties['keyAliasDebug']
+            keyPassword keystoreProperties['keyPasswordDebug']
+            storeFile file(keystoreProperties['storeFileDebug'])
+            storePassword keystoreProperties['storePasswordDebug']
+        }
+    }
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    flavorDimensions "flavors"
+    productFlavors {
+        dev {
+            dimension "flavors"
+            applicationIdSuffix ".dev"
+        }
+        staging {
+            dimension "flavors"
+            applicationIdSuffix ".staging"
+        }
+        prod {
+            dimension "flavors"
+            applicationIdSuffix ""
+        }
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'InvalidPackage'
+    }
+}
+
+flutter {
+    source '../..'
+    def flavourName = getCurrentFlavour()
+    if (flavourName == 'dev') {
+        target = 'lib/flavors/main_development.dart'
+    } else if (flavourName == 'staging') {
+        target = 'lib/flavors/main_staging.dart'
+    } else {
+        target = 'lib/flavors/main_production.dart'
+    }
+}
+
+def getCurrentFlavour() {
+    Gradle gradle = getGradle()
+    String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
+    print(tskReqStr.toString())
+
+    Pattern pattern
+    if (tskReqStr.contains("assemble"))
+        pattern = Pattern.compile("assemble(\\w+)(Release|Staging|Debug)")
+    else
+        pattern = Pattern.compile("generate(\\w+)(Release|Staging|Debug)")
+    Matcher matcher = pattern.matcher(tskReqStr)
+    if (matcher.find()) {
+        def value = matcher.group(1).toLowerCase()
+        return value
+    } else {
+        return ""
+    }
+}
+dependencies {
+    ext {
+        hilt_version = '2.42'
+        sdkNetAlo_version = '2.5.3'
+    }
+    implementation fileTree(include: ['*.jar', '*.aar'], exclude: 'test_aar*', dir: 'libs')
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation "androidx.multidex:multidex:2.0.1"
+    //SDK
+//    implementation "vn.netacom:NetAloFull:$sdkNetAlo_version"
+    implementation "vn.netacom:NetAloFull-Dev:$sdkNetAlo_version"
+//    debugImplementation "vn.netacom:NetAloFull-Dev:$sdkNetAlo_version" //(for dev)
+//    releaseImplementation "vn.netacom:NetAloFull:$sdkNetAlo_version" //(for production)
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    implementation("androidx.hilt:hilt-work:1.0.0")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
+//    implementation 'com.github.ChickenHook:RestrictionBypass:2.2'
+    implementation "com.facebook.android:facebook-share:12.2.0"
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CLIENT_ID</key>
+    <string>579826564997-ius0317t1ci19nd5r734pk1h4bf2jdra.apps.googleusercontent.com</string>
+    <key>REVERSED_CLIENT_ID</key>
+    <string>com.googleusercontent.apps.579826564997-ius0317t1ci19nd5r734pk1h4bf2jdra</string>
+    <key>ANDROID_CLIENT_ID</key>
+    <string>579826564997-0ssp6jf83i8uuf5ju0d8oaguga7b974b.apps.googleusercontent.com</string>
+    <key>API_KEY</key>
+    <string>AIzaSyBcAVgMcb72aQ6jJlmllvkvQHwJRLHuEJQ</string>
+    <key>GCM_SENDER_ID</key>
+    <string>579826564997</string>
+    <key>PLIST_VERSION</key>
+    <string>1</string>
+    <key>BUNDLE_ID</key>
+    <string>vn.netacom.lomo-dev</string>
+    <key>PROJECT_ID</key>
+    <string>lomo-1fb0f</string>
+    <key>STORAGE_BUCKET</key>
+    <string>lomo-1fb0f.appspot.com</string>
+    <key>IS_ADS_ENABLED</key>
+    <false/>
+    <key>IS_ANALYTICS_ENABLED</key>
+    <false/>
+    <key>IS_APPINVITE_ENABLED</key>
+    <true/>
+    <key>IS_GCM_ENABLED</key>
+    <true/>
+    <key>IS_SIGNIN_ENABLED</key>
+    <true/>
+    <key>GOOGLE_APP_ID</key>
+    <string>1:579826564997:ios:947ad19b0c78942a7eceec</string>
+    <key>DATABASE_URL</key>
+    <string>https://lomo-1fb0f.firebaseio.com</string>
+</dict>
+</plist>
