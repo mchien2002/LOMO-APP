@@ -468,7 +468,7 @@ class MainActivity : FlutterActivity(), CoroutineScope {
                 cdnEndpoint = EndPoint.URL_CDN,
                 cdnEndpointSdk = call.arguments as? String ?: "",
                 chatEndpoint = EndPoint.URL_SOCKET,
-                turnserverEndpoint = EndPoint.URL_TURN
+                // turnserverEndpoint = EndPoint.URL_TURN
             )
         )
         result.success(true)
