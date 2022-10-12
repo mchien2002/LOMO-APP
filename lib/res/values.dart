@@ -43,6 +43,7 @@ class Routes {
 
   static const moreDiscovery = "more_discovery";
   static const moreTopicHot = "more_topic_hot";
+  static const myMoreTopcHot = "my_more_topic_hot";
   static const moreHot = "more_hot";
   static const morePost = "more_post";
 

@@ -64,7 +64,10 @@ class _ListMoreTopicScreenState
   @override
   void initState() {
     super.initState();
+    // WITHOUT: KHÔNG CÓ DATA
     model.init(widget.args.getData);
+    //  WITHOUT: LOAD LIÊN TỤC
+    // NÓ SẼ LOADDATA RỒI GET PAGE VÀ PAGESIZE SAU ĐÓ TRUYỀN VÀO HÀM model.init
     model.loadData();
   }
 

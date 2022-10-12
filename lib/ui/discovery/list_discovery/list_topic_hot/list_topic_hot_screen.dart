@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:lomo/data/api/models/topic_item.dart';
 import 'package:lomo/res/colors.dart';
 import 'package:lomo/res/dimens.dart';
@@ -9,6 +10,7 @@ import 'package:lomo/res/theme/theme_manager.dart';
 import 'package:lomo/res/values.dart';
 import 'package:lomo/ui/base/base_state.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_more_topic/list_more_topic_screen.dart';
+import 'package:lomo/ui/discovery/list_discovery/list_more_topic/my_list_more_topic_screen.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_topic_hot/list_topic_hot_model.dart';
 import 'package:lomo/ui/widget/item_descovery/item_topic_hot_widget.dart';
 import 'package:lomo/ui/widget/shimmer_widget.dart';
@@ -81,12 +83,15 @@ class _ListTopicHotScreenState
                 if (widget.onViewMore != null) {
                   widget.onViewMore!();
                 }
-                Navigator.pushNamed(
-                  context,
-                  Routes.moreTopicHot,
-                  arguments:
-                      ListMoreTopicArguments(widget.title, widget.getData),
-                );
+                // Navigator.pushNamed(
+                //   context,
+                //   Routes.moreTopicHot,
+                //   arguments:
+                //       ListMoreTopicArguments(widget.title, widget.getData),
+                // );
+                Navigator.pushNamed(context, Routes.myMoreTopcHot,
+                    arguments:
+                        MyListMoreTopicArguments(widget.title, widget.getData));
               },
               child: Container(
                 padding: EdgeInsets.only(top: 2, bottom: 2, left: 5, right: 5),
@@ -141,7 +146,7 @@ class _ListTopicHotScreenState
                             left: Dimens.size10,
                             right: Dimens.size10,
                             bottom: Dimens.spacing16),
-                        width:  width,
+                        width: width,
                         decoration: BoxDecoration(
                           color: Colors.grey.withOpacity(0.5),
                           borderRadius: BorderRadius.circular(Dimens.spacing10),
@@ -151,7 +156,7 @@ class _ListTopicHotScreenState
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              width:  width / 2,
+                              width: width / 2,
                               height: Dimens.spacing14,
                               color: Colors.white,
                             ),
@@ -169,7 +174,7 @@ class _ListTopicHotScreenState
                                   width: Dimens.spacing5,
                                 ),
                                 Container(
-                                  width:  width / 3.0,
+                                  width: width / 3.0,
                                   height: Dimens.size12,
                                   color: Colors.white,
                                 ),

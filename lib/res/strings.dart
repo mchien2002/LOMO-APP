@@ -14,7 +14,7 @@ extension Strings on String {
   /////////////////////////////////// CODE GEN ///////////////////////////////////
 
   static String get cancel => "cancel";
-  static String get feelingProfile =>   "feelingProfile";
+  static String get feelingProfile => "feelingProfile";
   static String get displaySetting => "displaySetting";
   static String get reviewInformationHint => "reviewInformationHint";
   static String get connect_friend => "connect_friend";

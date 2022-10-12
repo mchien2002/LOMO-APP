@@ -51,6 +51,7 @@ import 'package:lomo/ui/discovery/list_discovery/list_hot_model.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_knowledge/list_knowledge_model.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_more_hot/list_more_hot_model.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_more_topic/list_more_topic_model.dart';
+import 'package:lomo/ui/discovery/list_discovery/list_more_topic/my_list_more_topic_model.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_topic_hot/list_topic_hot_model.dart';
 import 'package:lomo/ui/discovery/list_more_out_standing/list_more_out_standing_model.dart';
 import 'package:lomo/ui/discovery/list_type_discovery/list_type_discovery_model.dart';
@@ -214,11 +215,13 @@ void setupLocator() {
   locator.registerFactory(() => FirstMessageModel());
   locator.registerFactory(() => ProfileDetailModel());
   locator.registerFactory(() => ListTopicHotModel());
+  
   locator.registerFactory(() => GiveBearWidgetModel());
   locator.registerFactory(() => TopicListModel());
   locator.registerFactory(() => FilterTimelineModel());
   locator.registerFactory(() => DatingListItemModel());
   locator.registerFactory(() => ListMoreTopicModel());
+  locator.registerFactory(() => MyListMoreTopicModel());
   locator.registerFactory(() => ListMoreHotModel());
   locator.registerFactory(() => ListTypeDiscoveryModel());
   locator.registerFactory(() => EventSliderModel());

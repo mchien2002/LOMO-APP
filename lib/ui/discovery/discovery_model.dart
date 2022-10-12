@@ -19,7 +19,7 @@ class DiscoveryModel extends BaseModel {
   Future<void> refresh({dynamic params}) async {
     print('refresh');
   }
-
+  // GỌI DATA TRONG CACHE
   getCacheDiscoveryList() async {
     final cacheItems = await _commonRepository.getCacheDiscoveryItems();
     if (cacheItems?.isNotEmpty == true) {

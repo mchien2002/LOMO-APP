@@ -33,6 +33,7 @@ import 'package:lomo/ui/dating/who_suits_me/reply_question/reply_question_screen
 import 'package:lomo/ui/discovery/discovery_screen.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_more_hot/list_more_hot_screen.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_more_topic/list_more_topic_screen.dart';
+import 'package:lomo/ui/discovery/list_discovery/list_more_topic/my_list_more_topic_screen.dart';
 import 'package:lomo/ui/discovery/list_more_discovery/list_more_discovery_screen.dart';
 import 'package:lomo/ui/discovery/list_more_out_standing/list_more_out_standing_screen.dart';
 import 'package:lomo/ui/discovery/list_type_discovery/list_type_discovery_screen.dart';
@@ -320,6 +321,10 @@ class _LomoAppState extends State<LomoApp> with WidgetsBindingObserver {
           builder: (_) =>
               ListMoreTopicScreen(settings.arguments as ListMoreTopicArguments),
         );
+      case Routes.myMoreTopcHot:
+        return CustomPageRoute(
+            builder: (_) => MyListMoreTopicScreen(
+                settings.arguments as MyListMoreTopicArguments));
       case Routes.moreHot:
         return CustomPageRoute(
           builder: (_) => ListMoreHotScreen(
