@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:lomo/data/api/models/topic_item.dart';
-import 'package:lomo/res/colors.dart';
 import 'package:lomo/res/dimens.dart';
 import 'package:lomo/res/images.dart';
 import 'package:lomo/res/strings.dart';
@@ -87,6 +85,44 @@ class _MyListMoreTopicScreenState extends BaseGridState<TopictItem,
                       radius: Dimens.spacing8,
                       boxFit: BoxFit.cover,
                     ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(Dimens.spacing8),
+                child: Image.asset(
+                  DImages.knowledgeGradient,
+                  height: heightItem,
+                  width: widthItem,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(
+                    left: Dimens.size10,
+                    right: Dimens.size10,
+                    bottom: Dimens.size12),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      item.name ?? " ",
+                      overflow: TextOverflow.ellipsis,
+                      style: textTheme(context).text15.bold.colorWhite,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          DImages.topicHot,
+                          height: Dimens.spacing16,
+                          width: Dimens.spacing16,
+                        ),
+                        Text(
+                          item.numberOfPost.toString(),
+                          style: textTheme(context).text10.bold.colorWhite,
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ));
@@ -105,8 +141,11 @@ class _MyListMoreTopicScreenState extends BaseGridState<TopictItem,
   double get crossAxisSpacing => spaceItem;
 }
 
+
+// LIST DATA TOPIC ITEM
 class MyListMoreTopicArguments {
   final Future<List<TopictItem>> Function(int page, int pageSize) getData;
+  // TITLE APPBAR
   final String title;
   MyListMoreTopicArguments(this.title, this.getData);
 }
