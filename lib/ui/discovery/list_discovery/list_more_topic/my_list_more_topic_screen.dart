@@ -6,6 +6,7 @@ import 'package:lomo/res/strings.dart';
 import 'package:lomo/res/theme/text_theme.dart';
 import 'package:lomo/res/theme/theme_manager.dart';
 import 'package:lomo/ui/base/base_grid_state.dart';
+import 'package:lomo/ui/discovery/list_discovery/item/topic_item/topic_item_widget.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_more_topic/my_list_more_topic_model.dart';
 
 import '../../../widget/image_widget.dart';
@@ -57,75 +58,11 @@ class _MyListMoreTopicScreenState extends BaseGridState<TopictItem,
 
   @override
   Widget buildItem(BuildContext context, TopictItem item, int index) {
-    double widthItem =
-        (MediaQuery.of(context).size.width - 2 * paddingC - spaceItem) / 2;
-    double heightItem = widthItem * childAspectRatio;
-    return InkWell(
-        onTap: () {},
-        child: Container(
-          height: heightItem,
-          width: widthItem,
-          decoration: BoxDecoration(
-              color: getColor().black4B,
-              borderRadius: BorderRadius.circular(Dimens.spacing10)),
-          child: Stack(
-            children: [
-              item.imageLocal != null
-                  ? ClipRRect(
-                      child: Image.asset(
-                        item.imageLocal!,
-                        height: heightItem,
-                        width: widthItem,
-                      ),
-                    )
-                  : RoundNetworkImage(
-                      height: heightItem,
-                      width: widthItem,
-                      url: item.image ?? '',
-                      radius: Dimens.spacing8,
-                      boxFit: BoxFit.cover,
-                    ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(Dimens.spacing8),
-                child: Image.asset(
-                  DImages.knowledgeGradient,
-                  height: heightItem,
-                  width: widthItem,
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                    left: Dimens.size10,
-                    right: Dimens.size10,
-                    bottom: Dimens.size12),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      item.name ?? " ",
-                      overflow: TextOverflow.ellipsis,
-                      style: textTheme(context).text15.bold.colorWhite,
-                    ),
-                    Row(
-                      children: [
-                        Image.asset(
-                          DImages.topicHot,
-                          height: Dimens.spacing16,
-                          width: Dimens.spacing16,
-                        ),
-                        Text(
-                          item.numberOfPost.toString(),
-                          style: textTheme(context).text10.bold.colorWhite,
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              )
-            ],
-          ),
-        ));
+    return TopicItemWidget(
+        item: item,
+        paddingC: paddingC,
+        spaceItem: spaceItem,
+        childAspectRatio: childAspectRatio);
   }
 
   @override
@@ -140,7 +77,6 @@ class _MyListMoreTopicScreenState extends BaseGridState<TopictItem,
   @override
   double get crossAxisSpacing => spaceItem;
 }
-
 
 // LIST DATA TOPIC ITEM
 class MyListMoreTopicArguments {
