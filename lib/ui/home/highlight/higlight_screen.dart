@@ -134,6 +134,7 @@ class _HighlightScreenState extends BaseState<HighlightModel, HighlightScreen>
       body: Stack(
         alignment: Alignment.topCenter,
         children: [
+          // NỘI DUNG TRONG HIGHTLIGHT
           Container(
             child: TabBarView(
               physics: const NeverScrollableScrollPhysics(),
@@ -244,6 +245,7 @@ class _HighlightScreenState extends BaseState<HighlightModel, HighlightScreen>
     }
   }
 
+  // KEEP ALIVE WIDGET IS SHOWED IN LISTVIEW
   @override
   bool get wantKeepAlive => true;
 }

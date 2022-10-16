@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lomo/data/api/models/topic_item.dart';
-import 'package:lomo/res/dimens.dart';
 import 'package:lomo/res/images.dart';
 import 'package:lomo/res/strings.dart';
 import 'package:lomo/res/theme/text_theme.dart';
@@ -8,8 +7,6 @@ import 'package:lomo/res/theme/theme_manager.dart';
 import 'package:lomo/ui/base/base_grid_state.dart';
 import 'package:lomo/ui/discovery/list_discovery/item/topic_item/topic_item_widget.dart';
 import 'package:lomo/ui/discovery/list_discovery/list_more_topic/my_list_more_topic_model.dart';
-
-import '../../../widget/image_widget.dart';
 
 class MyListMoreTopicScreen extends StatefulWidget {
   final MyListMoreTopicArguments arguments;
