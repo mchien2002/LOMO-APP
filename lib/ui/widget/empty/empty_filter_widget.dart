@@ -43,7 +43,7 @@ class EmptyFilterWidget extends StatelessWidget {
             padding: const EdgeInsets.only(left: Dimens.size50, right: Dimens.size50),
             child: RoundedButton(
               text: btnTitle ?? Strings.textBtnEmptyDating.localize(context),
-              textStyle: textTheme(context).text17.colorWhite.bold,
+              textStyle: textTheme(context).text16.colorWhite.bold,
               onPressed: () {
                 onClicked();
               },

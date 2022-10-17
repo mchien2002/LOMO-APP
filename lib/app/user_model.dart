@@ -16,6 +16,7 @@ class UserModel extends BaseModel {
   final _commonRepository = locator<CommonRepository>();
   ValueNotifier<AuthState?> authState = ValueNotifier(null);
   ValueNotifier<UserSetting?> userSetting = ValueNotifier(null);
+  ValueNotifier<UserSetting?> test = ValueNotifier(null);
   User? user;
 
   init(Environment env) async {

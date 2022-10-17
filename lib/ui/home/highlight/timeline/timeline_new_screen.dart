@@ -94,6 +94,7 @@ class _TimeLineNewScreenState
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
     print("didChangeAppLifecycleState: ${state.name}");
+    // Khi app đang ở chế độ background
     if (state == AppLifecycleState.paused ||
         state == AppLifecycleState.inactive) {
       // bắn event thông báo đã ra khỏi tab news feed

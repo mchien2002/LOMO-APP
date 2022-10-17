@@ -65,6 +65,7 @@ import 'package:lomo/ui/gift/list_more_gift_model.dart';
 import 'package:lomo/ui/gift/send_information_gift/send_information_gift_model.dart';
 import 'package:lomo/ui/home/highlight/fliter_timeline/filter_timeline_model.dart';
 import 'package:lomo/ui/home/highlight/highlight_model.dart';
+import 'package:lomo/ui/home/highlight/my_timeline/my_timeline_list_model.dart';
 import 'package:lomo/ui/home/highlight/post_detail/post_detail_model.dart';
 import 'package:lomo/ui/home/highlight/post_detail/video_detail_model.dart';
 import 'package:lomo/ui/home/highlight/timeline/item/timeline_item_model.dart';
@@ -202,6 +203,7 @@ void setupLocator() {
   locator.registerFactory(() => DatingUserDetailModel());
 
   locator.registerFactory(() => TimelineListModel());
+  locator.registerFactory(() => MyTimeLineListModel());
   locator.registerFactory(() => TimelineItemModel());
   locator.registerFactory(() => PostDetailModel());
   locator.registerFactory(() => VideoDetailModel());
@@ -215,7 +217,7 @@ void setupLocator() {
   locator.registerFactory(() => FirstMessageModel());
   locator.registerFactory(() => ProfileDetailModel());
   locator.registerFactory(() => ListTopicHotModel());
-  
+
   locator.registerFactory(() => GiveBearWidgetModel());
   locator.registerFactory(() => TopicListModel());
   locator.registerFactory(() => FilterTimelineModel());
