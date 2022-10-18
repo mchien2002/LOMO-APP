@@ -1,6 +1,13 @@
+// ignore_for_file: unnecessary_statements
+
+import 'package:lomo/app/lomo_app.dart';
 import 'package:lomo/app/user_model.dart';
 import 'package:lomo/data/api/api_constants.dart';
 import 'package:lomo/data/api/models/filter_request_item.dart';
+import 'package:lomo/data/eventbus/delete_post_event.dart';
+import 'package:lomo/data/eventbus/follow_user_event.dart';
+import 'package:lomo/data/eventbus/give_bear_event.dart';
+import 'package:lomo/data/eventbus/lock_post_event.dart';
 import 'package:lomo/ui/base/base_list_model.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -29,12 +36,48 @@ class MyTimeLineListModel extends BaseListModel<NewFeed> {
   }
 
   // register listener
-  init() {}
+  init() {
+    eventBus.on<GiveBearUserEvent>().listen((event) async {
+      items.forEach((newFeed) {
+        if (newFeed.user!.id == event.userId) {
+          newFeed.isBear = event.isBear;
+        }
+      });
+      notifyListeners();
+    });
+    eventBus.on<FollowUserEvent>().listen((event) {
+      items.forEach((newFeed) {
+        if (newFeed.user!.id == event.userId) {
+          newFeed.user!.isFollow == event.isFollow;
+        }
+      });
+      notifyListeners();
+    });
+    eventBus.on<DeletePostEvent>().listen((event) {
+      items.forEach((newFeed) {
+        if (newFeed.user!.id == event.postId) {
+          newFeed.isDeleted = true;
+          notifyListeners();
+          return;
+        }
+      });
+    });
+    eventBus.on<LockPostEvent>().listen((event) {
+      items.forEach((element) {
+        if (element.user!.id == event.postId) {
+          element.isLock = true;
+          notifyListeners();
+          return;
+        }
+      });
+    });
+  }
+
   // chưa hiểu lắm
   sendBear(String userID) async {
-  await callApi(doSomething: () async {
+    await callApi(doSomething: () async {
       await _userRepository.sendBear(userID);
-    locator<UserModel>().user!.numberOfCandy =
+      locator<UserModel>().user!.numberOfCandy =
           locator<UserModel>().user!.numberOfCandy! - 1;
       // locator<UserModel>().notifyListeners();
       notifyListeners();

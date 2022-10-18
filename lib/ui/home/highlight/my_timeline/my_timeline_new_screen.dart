@@ -1,40 +1,71 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:inview_notifier_list/inview_notifier_list.dart';
+import 'package:lomo/app/app_model.dart';
 import 'package:lomo/app/lomo_app.dart';
 import 'package:lomo/data/api/models/new_feed.dart';
 import 'package:lomo/data/eventbus/filter_highlight_event.dart';
 import 'package:lomo/data/eventbus/outside_newfeed_event.dart';
 import 'package:lomo/res/images.dart';
 import 'package:lomo/res/strings.dart';
-import 'package:lomo/ui/base/base_list_state.dart';
+import 'package:lomo/ui/base/base_state.dart';
+import 'package:lomo/ui/home/highlight/my_timeline/item/mytimeline_item_view.dart';
+import 'package:lomo/ui/home/highlight/timeline/list_favorite/favorite_post_dialog.dart';
 import 'package:lomo/ui/widget/empty/empty_filter_widget.dart';
+import 'package:visibility_detector/visibility_detector.dart';
+import '../../../../di/locator.dart';
+import '../../../../res/colors.dart';
+import '../../../../res/theme/theme_manager.dart';
 import 'my_timeline_list_model.dart';
 
 class MyTimeLineNewScreen extends StatefulWidget {
-  const MyTimeLineNewScreen({Key? key}) : super(key: key);
+  final ValueNotifier<dynamic> refreshData;
+  const MyTimeLineNewScreen({Key? key, required this.refreshData})
+      : super(key: key);
 
   @override
   State<MyTimeLineNewScreen> createState() => _MyTimeLineNewScreenState();
 }
 
 class _MyTimeLineNewScreenState
-    extends BaseListState<NewFeed, MyTimeLineListModel, MyTimeLineNewScreen>
+    extends BaseState<MyTimeLineListModel, MyTimeLineNewScreen>
     with
         WidgetsBindingObserver,
         AutomaticKeepAliveClientMixin<MyTimeLineNewScreen> {
-  ScrollController? timeLineController;
+  late ScrollController controller;
+  final GlobalKey<RefreshIndicatorState> refreshIndicatorKey =
+      GlobalKey<RefreshIndicatorState>();
   bool alwaysScrollablePhysics = true;
+  bool get enableRefresh => true;
+
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
-    timeLineController?.removeListener(_scrollLitener);
+    controller.removeListener(_scrollLitener);
     super.dispose();
   }
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+    // init widgetbinding
+    WidgetsBinding.instance.addObserver(this);
+    // load data trong bộ nhớ đệm nếu app không có kết nối
+    controller = new ScrollController()..addListener(_scrollLitener);
+    if (isLoadCacheData && !locator<AppModel>().isConnected) {
+      model.loadCacheData();
+    } else if (autoLoadData && locator<AppModel>().isConnected) {
+      model.loadData();
+    }
+
+    widget.refreshData.addListener(() {
+      if (model.items.isNotEmpty) {
+        if (controller.position.pixels == 0) {
+          model.refresh();
+        } else {
+          jumpToTop();
+        }
+      }
+    });
   }
 
   // CHECK XEM APP CÓ ĐANG Ở CHẾ ĐÔ BACKGROUND HAY KHÔNG
@@ -50,49 +81,114 @@ class _MyTimeLineNewScreenState
     super.didChangeAppLifecycleState(state);
   }
 
-  @override
-  Future<void> onRefresh() {
-    // TODO: implement onRefresh
-    return super.onRefresh();
+  Future<void> onRefresh() async {
+    return model.refresh();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
-        // ListView(
-        //   physics: AlwaysScrollableScrollPhysics(),
-        // ),
-        buildEmptyView(context)
-      ],
+    return buildContent();
+  }
+
+  callListFavoriteUserPost(BuildContext context, String? idPost) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: getColor().transparent,
+      isScrollControlled: true,
+      enableDrag: false,
+      builder: (context) => FavoritePostDialog(
+        isPost: idPost,
+        onClosed: () {
+          Navigator.pop(context);
+        },
+      ),
     );
   }
 
-  callListFavoriteUserPost(
-      BuildContext context, NewFeed item, String? idPost) {}
-
   @override
   Widget buildContentView(BuildContext context, MyTimeLineListModel model) {
-    // TODO: implement buildContentView
-    throw UnimplementedError();
+    Widget contentBuilder;
+    if (model.items.isEmpty) {
+      contentBuilder = Stack(
+        children: [
+          ListView(
+            physics: AlwaysScrollableScrollPhysics(),
+          ),
+          buildEmptyView(context)
+        ],
+      );
+    } else if (enableRefresh) {}
+    {
+      contentBuilder = Container(
+        color: backgroundColor,
+        child: InViewNotifierList(
+          physics: BouncingScrollPhysics(),
+          controller: enableRefresh ? controller : null,
+          isInViewPortCondition:
+              (double deltaTop, double deltaBottom, double viewPortDimension) {
+            final avg = (deltaBottom + deltaTop) / 2;
+            return (avg > 0.2 * viewPortDimension &&
+                avg < 0.7 * viewPortDimension);
+          },
+          itemCount: model.itemCount,
+          initialInViewIds: [if (model.items.isNotEmpty) "0"],
+          builder: ((context, index) {
+            return InViewNotifierWidget(
+                id: '$index',
+                builder: (context, isInView, child) =>
+                    buildItem(context, model.items[index], index, isInView));
+          }),
+        ),
+      );
+    }
+    if (enableRefresh) {
+      // icon mỗi khi scroll xuống để reload
+      contentBuilder = RefreshIndicator(
+        child: contentBuilder,
+        onRefresh: onRefresh,
+        key: refreshIndicatorKey,
+      );
+    }
+    return contentBuilder;
   }
 
-  @override
-  Widget buildItem(BuildContext context, NewFeed item, int index) {
-    // TODO: implement buildItem
-    throw UnimplementedError();
+  Widget buildItem(
+      BuildContext context, NewFeed item, int index, bool isInView) {
+    return VisibilityDetector(
+      key: Key(item.id!),
+      onVisibilityChanged: (visibilityInfo) {
+        var visiblePercentage = visibilityInfo.visibleFraction * 100;
+        if (visiblePercentage > 60.0)
+          debugPrint(
+              'isFinite $index:${visibilityInfo.visibleFraction.isFinite}');
+      },
+      child: Column(
+        children: [
+          Container(
+            height: index == 0 ? 1.2 : 0,
+            color: getColor().pinkF2F5Color,
+          ),
+          // BEGIN TIMELINE WIDGET
+          MyTimeLineItemView(
+            newFeed: item,
+            isWathching: isInView,
+            onBlockUser: (user) {},
+            onDeleteAction: () {},
+            onViewFavoriteAction: () {},
+          )
+          // END TIMELINE WIDGET
+        ],
+      ),
+    );
   }
 
-  @override
   Widget buildSeparator(BuildContext context, int index) {
-    // TODO: implement buildSeparator
-    return super.buildSeparator(context, index);
+    return Container();
   }
 
   _onRefresh() {}
   @override
   void onRetry() {
-    // TODO: implement onRetry
     super.onRetry();
   }
 
@@ -108,18 +204,21 @@ class _MyTimeLineNewScreenState
   }
 
   _scrollLitener() {
-    
-  }
-  @override
-  jumpToTop() {
-    // TODO: implement jumpToTop
-    return super.jumpToTop();
+    if (controller.position.extentAfter < rangeLoadMore) {
+      model.loadMoreData();
+    }
   }
 
+  jumpToTop() {}
+
   @override
-  // TODO: implement wantKeepAlive
-  bool get wantKeepAlive => throw UnimplementedError();
-  @override
-  // TODO: implement rangeLoadMore
+  bool get wantKeepAlive => true;
   double get rangeLoadMore => 1024;
+  bool get isLoadCacheData => false;
+  bool get autoLoadData => true;
+  EdgeInsets get padding => const EdgeInsets.all(0);
+  double get itemSpacing => 0;
+  Color get dividerColor => DColors.whiteColor;
+  Color get backgroundColor => getColor().white;
+  bool get enableScroll => true;
 }

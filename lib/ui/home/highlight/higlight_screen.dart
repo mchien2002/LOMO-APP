@@ -19,7 +19,6 @@ import 'package:lomo/ui/base/base_state.dart';
 import 'package:lomo/ui/dating/dating_list/dating_list_screen.dart';
 import 'package:lomo/ui/home/highlight/highlight_model.dart';
 import 'package:lomo/ui/home/highlight/my_timeline/my_timeline_new_screen.dart';
-import 'package:lomo/ui/home/highlight/timeline/timeline_list_screen.dart';
 import 'package:lomo/ui/home/highlight/timeline/timeline_new_screen.dart';
 import 'package:lomo/ui/widget/bottom_sheet_widgets.dart';
 import 'package:lomo/ui/widget/chat_widget.dart';
@@ -136,7 +135,6 @@ class _HighlightScreenState extends BaseState<HighlightModel, HighlightScreen>
       body: Stack(
         alignment: Alignment.topCenter,
         children: [
-          // NỘI DUNG TRONG HIGHTLIGHT
           Container(
             child: TabBarView(
               physics: const NeverScrollableScrollPhysics(),
@@ -225,10 +223,15 @@ class _HighlightScreenState extends BaseState<HighlightModel, HighlightScreen>
   Widget _viewByTab(DTabItem tab) {
     switch (tab.id) {
       case tabTimeline:
-        // return MyTimeLineNewScreen();
-      return TimelineListScreen(
-        refreshData: model.refreshForYouPage,
-      );
+        return MyTimeLineNewScreen(
+          refreshData: model.refreshForYouPage,
+        );
+      // return TimeLineNewScreen(
+      //   refreshData: model.refreshForYouPage,
+      // );
+      // return TimelineListScreen(
+      //   refreshData: model.refreshForYouPage,
+      // );
       case tabDating:
         return DatingListScreen(
           refreshData: model.refreshDatingPage,
@@ -245,7 +248,6 @@ class _HighlightScreenState extends BaseState<HighlightModel, HighlightScreen>
     }
   }
 
-  // KEEP ALIVE WIDGET IS SHOWED IN LISTVIEW
   @override
   bool get wantKeepAlive => true;
 }
