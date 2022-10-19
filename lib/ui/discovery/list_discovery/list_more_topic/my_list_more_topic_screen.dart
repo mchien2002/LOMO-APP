@@ -50,7 +50,7 @@ class _MyListMoreTopicScreenState extends BaseGridState<TopictItem,
     super.initState();
     // LOAD DATA CHO TOPIC ITEM
     model.init(widget.arguments.getData);
-    model.loadData();
+    // model.loadData();
   }
 
   @override
@@ -68,7 +68,7 @@ class _MyListMoreTopicScreenState extends BaseGridState<TopictItem,
   @override
   double get childAspectRatio => 166 / 97;
   @override
-  bool get autoLoadData => false;
+  bool get autoLoadData => true;
   @override
   double get mainAxisSpacing => spaceItem;
   @override

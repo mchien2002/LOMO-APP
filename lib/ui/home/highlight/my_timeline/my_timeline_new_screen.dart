@@ -12,9 +12,12 @@ import 'package:lomo/ui/home/highlight/my_timeline/item/mytimeline_item_view.dar
 import 'package:lomo/ui/home/highlight/timeline/list_favorite/favorite_post_dialog.dart';
 import 'package:lomo/ui/widget/empty/empty_filter_widget.dart';
 import 'package:visibility_detector/visibility_detector.dart';
+import '../../../../data/eventbus/refresh_mypost_event.dart';
 import '../../../../di/locator.dart';
 import '../../../../res/colors.dart';
 import '../../../../res/theme/theme_manager.dart';
+import '../../../../util/common_utils.dart';
+import '../timeline/item/timeline_item_view.dart';
 import 'my_timeline_list_model.dart';
 
 class MyTimeLineNewScreen extends StatefulWidget {
@@ -108,6 +111,7 @@ class _MyTimeLineNewScreenState
   @override
   Widget buildContentView(BuildContext context, MyTimeLineListModel model) {
     Widget contentBuilder;
+    print("ITEM LENGHT: ${model.items.length}");
     if (model.items.isEmpty) {
       contentBuilder = Stack(
         children: [
@@ -176,6 +180,28 @@ class _MyTimeLineNewScreenState
             onDeleteAction: () {},
             onViewFavoriteAction: () {},
           )
+          // TimelineItemView(
+          //   isInView: isInView,
+          //   newFeed: item,
+          //   onViewFavoriteAction: () {
+          //     // bắn event thông báo đã ra khỏi tab news feed
+          //     eventBus.fire(OutSideNewFeedsEvent());
+          //     callListFavoriteUserPost(context, item.id);
+          //   },
+          //   onDeleteAction: () async {
+          //     callApi(callApiTask: () async {
+          //       await model.deleteNewFeedPost(item.id!);
+          //     }, onSuccess: () {
+          //       showToast(Strings.deletePostSuccess.localize(context));
+          //       //Update ben trang ca nhan
+          //       eventBus.fire(RefreshMyPostEvent(newFeedId: item.id!));
+          //     });
+          //   },
+          //   onBlockUser: (user) async {
+          //     await model.block(user);
+          //     showToast(Strings.blockSuccess.localize(context));
+          //   },
+          // )
           // END TIMELINE WIDGET
         ],
       ),
