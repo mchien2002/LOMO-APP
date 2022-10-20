@@ -12,12 +12,10 @@ import 'package:lomo/ui/home/highlight/my_timeline/item/mytimeline_item_view.dar
 import 'package:lomo/ui/home/highlight/timeline/list_favorite/favorite_post_dialog.dart';
 import 'package:lomo/ui/widget/empty/empty_filter_widget.dart';
 import 'package:visibility_detector/visibility_detector.dart';
-import '../../../../data/eventbus/refresh_mypost_event.dart';
 import '../../../../di/locator.dart';
 import '../../../../res/colors.dart';
 import '../../../../res/theme/theme_manager.dart';
 import '../../../../util/common_utils.dart';
-import '../timeline/item/timeline_item_view.dart';
 import 'my_timeline_list_model.dart';
 
 class MyTimeLineNewScreen extends StatefulWidget {

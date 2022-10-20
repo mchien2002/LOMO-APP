@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:lomo/data/api/models/new_feed.dart';
 import 'package:lomo/data/api/models/response/photo_model.dart';
 import 'package:lomo/res/dimens.dart';
-import 'package:lomo/res/theme/theme_manager.dart';
 import 'package:lomo/ui/widget/image_widget.dart';
 import 'package:lomo/ui/widget/shimmers/image/image_rectangle_shimmer.dart';
 
