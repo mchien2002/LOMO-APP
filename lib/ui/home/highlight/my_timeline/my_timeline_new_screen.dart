@@ -176,9 +176,24 @@ class _MyTimeLineNewScreenState
           MyTimeLineItemView(
             newFeed: item,
             isWathching: isInView,
-            onBlockUser: (user) {},
-            onDeleteAction: () {},
-            onViewFavoriteAction: () {},
+            onBlockUser: (user) async {
+              callApi(callApiTask: () async {
+                model.block(user);
+              }, onSuccess: () {
+                showToast(Strings.blockSuccess.localize(context));
+              });
+            },
+            onDeleteAction: () async {
+              callApi(callApiTask: () async {
+                await model.deleteNewFeedPost(item.id!);
+              }, onSuccess: () {
+                showToast(Strings.deletePostSuccess.localize(context));
+              });
+            },
+            onViewFavoriteAction: () async {
+              eventBus.fire(OutSideNewFeedsEvent());
+              callListFavoriteUserPost(context, item.id);
+            },
           )
           // TimelineItemView(
           //   isInView: isInView,
