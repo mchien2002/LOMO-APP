@@ -20,7 +20,7 @@ class TimeLineVideoItem extends StatelessWidget {
       network: getFullLinkVideo(photo.link),
       height: height,
       width: width,
-      isPlaying: willPlay,
+      isPlaying: willPlay,  
       loader: Stack(
         alignment: Alignment.center,
         children: [

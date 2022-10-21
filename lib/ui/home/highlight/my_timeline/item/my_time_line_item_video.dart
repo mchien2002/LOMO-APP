@@ -1,7 +1,9 @@
 import 'package:lomo/app/lomo_app.dart';
 import 'package:lomo/app/user_model.dart';
+import 'package:lomo/data/api/models/user_setting.dart';
 import 'package:lomo/data/eventbus/outside_newfeed_event.dart';
 import 'package:lomo/di/locator.dart';
+import 'package:lomo/res/images.dart';
 import 'package:lomo/res/theme/theme_manager.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';
@@ -45,6 +47,7 @@ class _MyTimeLineItemVideoState extends State<MyTimeLineItemVideo>
         _controller.pause();
       }
     });
+    // tùy chỉnh auto play của video theo setting của
     autoPlay = locator<UserModel>().userSetting.value!.isVideoAutoPlay;
     locator<UserModel>().userSetting.addListener(() {
       if (autoPlay != locator<UserModel>().userSetting.value?.isVideoAutoPlay) {
@@ -81,6 +84,7 @@ class _MyTimeLineItemVideoState extends State<MyTimeLineItemVideo>
 
   void _listener() {
     if (!_controller.value.isInitialized) return;
+    // xét xem video đã chạy xong chưa
     if (_controller.value.position.compareTo(_controller.value.duration) >= 0) {
       if (!_completed) {
         _completed = true;
@@ -132,6 +136,7 @@ class _MyTimeLineItemVideoState extends State<MyTimeLineItemVideo>
         _controller.value.duration.inSeconds;
   }
 
+  // tua video
   Future<void> _seekVideo(bool forward) async {
     if (!_controller.value.isInitialized) return;
     int newTime;
@@ -198,10 +203,66 @@ class _MyTimeLineItemVideoState extends State<MyTimeLineItemVideo>
                         ),
                       ),
                     ),
-            Positioned(child: Container())
+            Positioned(
+                child: MySoundVideoButotn(
+              controller: _controller,
+            ))
           ],
         ),
       ),
+    );
+  }
+}
+
+class MySoundVideoButotn extends StatefulWidget {
+  MySoundVideoButotn({Key? key, this.controller}) : super(key: key);
+  VideoPlayerController? controller;
+
+  @override
+  State<MySoundVideoButotn> createState() => _MySoundVideoButotnState();
+}
+
+class _MySoundVideoButotnState extends State<MySoundVideoButotn> {
+  bool hashSoundVideo = false;
+  @override
+  void initState() {
+    super.initState();
+    locator<UserModel>().userSetting.addListener(() {
+      enableSoundPlayer(
+          locator<UserModel>().userSetting.value?.hasSoundVideoAutoPlay ??
+              false);
+    });
+    enableSoundPlayer(
+        locator<UserModel>().userSetting.value?.hasSoundVideoAutoPlay ?? false);
+  }
+
+  // xét xem có auto bật video hay không
+  void enableSoundPlayer(bool hasSound) {
+    try {
+      hashSoundVideo = hasSound;
+      if (widget.controller != null) {
+        widget.controller!.setVolume(hasSound ? 1.0 : 0.0);
+      }
+      if (mounted) {
+        setState(() {});
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      child: Container(
+          height: 44,
+          width: 44,
+          alignment: Alignment.center,
+          child: Image.asset(
+            hashSoundVideo ? DImages.unmuteVideo : DImages.muteVideo,
+            height: 32,
+            width: 32,
+          )),
     );
   }
 }
