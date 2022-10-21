@@ -254,6 +254,10 @@ class _MySoundVideoButotnState extends State<MySoundVideoButotn> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: () {
+        locator<UserModel>().updateUserSetting(
+            hasSoundVideoAutoPlay: !hashSoundVideo, isSaveSetting: false);
+      },
       child: Container(
           height: 44,
           width: 44,
